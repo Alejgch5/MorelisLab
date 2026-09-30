@@ -1,0 +1,2048 @@
+/* == AQUÍ SE APLICAN ESTILOS A: :root == */
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #183440;
+  background: #edf2f5;
+  font-synthesis: none;
+  --navy: #153541;
+  --green: #0c7261;
+  --line: #dbe5e9;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: * == */
+* {
+  box-sizing: border-box;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: body == */
+body {
+  margin: 0;
+}
+button,
+select,
+/* == AQUÍ SE APLICAN ESTILOS A: input == */
+input {
+  font: inherit;
+}
+button,
+select,
+/* == AQUÍ SE APLICAN ESTILOS A: summary == */
+summary {
+  cursor: pointer;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: button:disabled == */
+button:disabled {
+  cursor: default;
+}
+button,
+a,
+select,
+input,
+/* == AQUÍ SE APLICAN ESTILOS A: summary == */
+summary {
+  touch-action: manipulation;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible,
+/* == AQUÍ SE APLICAN ESTILOS A: summary:focus-visible == */
+summary:focus-visible {
+  outline: 3px solid #2fa592;
+  outline-offset: 4px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: header == */
+header {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .brand == */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--navy);
+  text-decoration: none;
+  font-family: Manrope, sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .mark == */
+.mark {
+  background: var(--navy);
+  color: #90e6cd;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 39px;
+  border-radius: 10px;
+  font-size: 24px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .brand-sub == */
+.brand-sub {
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  font-weight: 600;
+  border-left: 1px solid #d0dce2;
+  padding-left: 20px;
+  margin-left: 9px;
+  color: #667e89;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .header-label == */
+.header-label {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: #68828e;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: main == */
+main {
+  max-width: 1660px;
+  padding: 28px 4% 18px;
+  margin: auto;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .title-row == */
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 25px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .eyebrow == */
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  color: #698490;
+  letter-spacing: 1.4px;
+  margin: 0 0 7px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: h1 == */
+h1 {
+  font-family: Manrope, sans-serif;
+  font-size: 30px;
+  letter-spacing: -1px;
+  margin: 0;
+  font-weight: 800;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .scenario-control label == */
+.scenario-control label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: #637c88;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .scenario-control select == */
+.scenario-control select {
+  background: white;
+  border: 1px solid #cfdae0;
+  border-radius: 8px;
+  padding: 10px 30px 10px 13px;
+  font-size: 14px;
+  color: #274553;
+  max-width: 100%;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .lab == */
+.lab {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 326px;
+  gap: 22px;
+  align-items: start;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage-column == */
+.stage-column {
+  min-width: 0;
+  border: 1px solid #d4dfe5;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage-toolbar == */
+.stage-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #153541;
+  color: #e5f0f5;
+  padding: 12px 20px;
+  font-size: 14px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage-toolbar > div == */
+.stage-toolbar > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .live-dot == */
+.live-dot {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #8be2c7;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .toolbar-actions label == */
+.toolbar-actions label {
+  font-size: 12px;
+  color: #aec5d0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .toolbar-actions select == */
+.toolbar-actions select {
+  background: #284752;
+  color: #f6fafc;
+  border: 1px solid #4a6570;
+  border-radius: 4px;
+  padding: 3px;
+  font-size: 12px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .toolbar-actions button == */
+.toolbar-actions button {
+  border: 1px solid #4a6570;
+  background: none;
+  color: #dcebf0;
+  border-radius: 5px;
+  width: 28px;
+  height: 28px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .toolbar-actions button:disabled == */
+.toolbar-actions button:disabled {
+  opacity: 0.35;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage == */
+.stage {
+  position: relative;
+  min-height: 440px;
+  aspect-ratio: 1.75;
+  overflow: hidden;
+  background: #e3edf0;
+  isolation: isolate;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .room == */
+.room {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+  transition:
+    filter 0.6s,
+    transform 1s;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage.focus .room == */
+.stage.focus .room {
+  filter: blur(7px);
+  transform: scale(1.08);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .room-shade == */
+.room-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #09243399, transparent 36%, #132e3820);
+  pointer-events: none;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage.focus .room-shade == */
+.stage.focus .room-shade {
+  background: #e8f0f1ed;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .view-badge == */
+.view-badge {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  background: #fffefaeb;
+  padding: 7px 10px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: #3a5663;
+  z-index: 3;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .caption == */
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  width: max-content;
+  text-align: center;
+  color: white;
+  background: #122e3de8;
+  padding: 12px 19px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  z-index: 8;
+  box-shadow: 0 4px 20px #142f3520;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .caption:empty == */
+.caption:empty {
+  display: none;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .animation-track == */
+.animation-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #15364115;
+  z-index: 9;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .animation-track > div == */
+.animation-track > div {
+  background: #65c6a9;
+  height: 100%;
+  width: 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: #scene == */
+#scene {
+  position: absolute;
+  inset: 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .transport == */
+.transport {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 18px;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  color: #6c838e;
+  flex-wrap: wrap;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .quiet == */
+.quiet {
+  border: 0;
+  background: none;
+  color: #4f6f7c;
+  font-size: 12px;
+  padding: 5px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .quiet:hover == */
+.quiet:hover {
+  color: var(--green);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .quiet:disabled == */
+.quiet:disabled {
+  opacity: 0.45;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray-section == */
+.tray-section {
+  padding: 17px 18px 20px;
+  background: #fafcfd;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray-heading == */
+.tray-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 13px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray-heading h2 == */
+.tray-heading h2 {
+  font-size: 14px;
+  margin: 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray-heading > span == */
+.tray-heading > span {
+  font-size: 12px;
+  color: #748b96;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray == */
+.tray {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 7px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .material == */
+.material {
+  background: #fff;
+  border: 1px solid #dae5e9;
+  border-radius: 9px;
+  min-width: 0;
+  padding: 5px 3px 8px;
+  color: #58727f;
+  text-align: center;
+  position: relative;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .material .asset == */
+.material .asset {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  display: block;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .material.active == */
+.material.active {
+  border-color: #328874;
+  color: #165d4e;
+  background: #eff9f4;
+  box-shadow: 0 0 0 1px #32887430;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .material.used::after == */
+.material.used::after {
+  content: "✓";
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  color: #22765e;
+  background: #e5f5ed;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  font-size: 12px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .material:hover == */
+.material:hover {
+  border-color: #328874;
+  transform: translateY(-2px);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .material span:last-child == */
+.material span:last-child {
+  font-size: 12px;
+  line-height: 1.3;
+  display: block;
+  overflow-wrap: anywhere;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .asset == */
+.asset {
+  background-image: url("assets/materials.png");
+  background-size: 300% 200%;
+  background-repeat: no-repeat;
+  background-color: #edf0f1;
+  border-radius: 8px;
+  aspect-ratio: 1;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sprite-0 == */
+.sprite-0 {
+  background-position: 0 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sprite-1 == */
+.sprite-1 {
+  background-position: 50% 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sprite-2 == */
+.sprite-2 {
+  background-position: 100% 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sprite-3 == */
+.sprite-3 {
+  background-position: 0 100%;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sprite-4 == */
+.sprite-4 {
+  background-position: 50% 100%;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sprite-5 == */
+.sprite-5 {
+  background-position: 100% 100%;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .icon-asset == */
+.icon-asset {
+  display: grid !important;
+  place-items: center;
+  background-image: none;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .icon-asset svg == */
+.icon-asset svg {
+  width: 78%;
+  height: 78%;
+  stroke: #658994;
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .guide == */
+.guide {
+  background: white;
+  border: 1px solid #d7e2e6;
+  border-radius: 14px;
+  padding: 24px;
+  min-height: 555px;
+  box-shadow: 0 4px 20px #1b3b4510;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .guide-top == */
+.guide-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 19px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #698690;
+  font-weight: 700;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .guided-badge == */
+.guided-badge {
+  background: #eaf4f0;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #328168;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .guide h2 == */
+.guide h2 {
+  font-family: Manrope, sans-serif;
+  font-size: 23px;
+  line-height: 1.35;
+  letter-spacing: -0.65px;
+  margin: 0 0 13px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .guide > p == */
+.guide > p {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #577381;
+  margin: 0 0 21px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .why == */
+.why {
+  border-top: 1px solid #e2e9ec;
+  padding-top: 17px;
+  margin: 21px 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .why > span == */
+.why > span {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #738a96;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .why p == */
+.why p {
+  font-size: 14px;
+  color: #5f7a88;
+  line-height: 1.7;
+  margin: 8px 0 0;
+}
+.primary,
+/* == AQUÍ SE APLICAN ESTILOS A: .secondary == */
+.secondary {
+  padding: 13px 17px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 0;
+  line-height: 1.4;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .primary == */
+.primary {
+  background: var(--navy);
+  color: white;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .primary:hover == */
+.primary:hover {
+  background: #245261;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .primary:disabled == */
+.primary:disabled {
+  background: #e8eef0;
+  color: #7a8e97;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .secondary == */
+.secondary {
+  border: 1px solid #cfdde3;
+  background: #f8fbfc;
+  color: #355a69;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .guide > .primary == */
+.guide > .primary {
+  width: 100%;
+  margin-top: 2px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stop-button == */
+.stop-button {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #94715d;
+  font-size: 12px;
+  margin-top: 12px;
+  padding: 9px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .check-row == */
+.check-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 8px 0;
+  cursor: pointer;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .check-row input == */
+.check-row input {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--green);
+  flex-shrink: 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .control-hint == */
+.control-hint {
+  font-size: 14px;
+  color: #67808d;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .action-button == */
+.action-button {
+  width: 100%;
+  border: 1px solid #a6c9bc;
+  border-radius: 8px;
+  background: #edf7f1;
+  color: #fcfdf8;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .action-button:disabled == */
+.action-button:disabled {
+  opacity: 0.5;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .range-label == */
+.range-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #617d87;
+  margin-top: 14px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: input[type="range"] == */
+input[type="range"] {
+  width: 100%;
+  accent-color: #208274;
+  height: 36px;
+  margin: 3px 0;
+  cursor: ew-resize;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .feedback == */
+.feedback {
+  background: #edf7f0;
+  border-left: 3px solid #3b9374;
+  color: #346653;
+  padding: 11px 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .feedback.warn == */
+.feedback.warn {
+  background: #fff5e9;
+  color: #926a38;
+  border-color: #d3a056;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sequence == */
+.sequence {
+  margin-top: 25px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sequence-top == */
+.sequence-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sequence h2 == */
+.sequence h2 {
+  font-size: 14px;
+  margin: 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sequence-top > span == */
+.sequence-top > span {
+  font-size: 12px;
+  color: #708994;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: #timeline == */
+#timeline {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 6px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .step-link == */
+.step-link {
+  min-width: 0;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-top: 3px solid #d7e2e7;
+  padding: 10px 3px;
+  font-size: 12px;
+  color: #778d98;
+  line-height: 1.4;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .step-link b == */
+.step-link b {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #7f96a1;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .step-link.current == */
+.step-link.current {
+  border-color: #1e7563;
+  color: #205b4d;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .step-link.current b == */
+.step-link.current b {
+  color: #1e7563;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .step-link.done == */
+.step-link.done {
+  border-color: #91bdaf;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .step-link:disabled == */
+.step-link:disabled {
+  opacity: 0.7;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .step-link:hover:not(:disabled) == */
+.step-link:hover:not(:disabled) {
+  background: #e4eeea;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: footer == */
+footer {
+  display: flex;
+  gap: 35px;
+  justify-content: space-between;
+  margin-top: 23px;
+  border-top: 1px solid #d4e0e6;
+  padding-top: 17px;
+  font-size: 12px;
+  color: #788e9a;
+  line-height: 1.7;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: footer > p == */
+footer > p {
+  margin: 0;
+  max-width: 740px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: footer details == */
+footer details {
+  max-width: 600px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: footer a == */
+footer a {
+  color: #447b76;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: footer ul == */
+footer ul {
+  padding-left: 18px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .hotspot == */
+.hotspot {
+  position: absolute;
+  background: #fffefa;
+  border: 1px solid #c2d9d5;
+  color: #204e5a;
+  border-radius: 30px;
+  box-shadow: 0 3px 20px #133a3d23;
+  padding: 11px 17px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  z-index: 3;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .hotspot::before == */
+.hotspot::before {
+  content: "+";
+  border-radius: 50%;
+  background: #2c8b73;
+  color: white;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  font-size: 18px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .hotspot:hover == */
+.hotspot:hover {
+  transform: scale(1.04);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .patient-hotspot == */
+.patient-hotspot {
+  top: 37%;
+  left: 48%;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinic-card == */
+.clinic-card {
+  position: absolute;
+  top: 21%;
+  left: 5%;
+  padding: 19px;
+  background: #fffffff5;
+  border: 1px solid white;
+  box-shadow: 0 10px 30px #1c344522;
+  border-radius: 11px;
+  width: 250px;
+  max-width: 40%;
+  font-size: 14px;
+  color: #486b79;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinic-card h3 == */
+.clinic-card h3 {
+  font-size: 17px;
+  color: #183e4b;
+  margin: 4px 0 8px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinic-card p == */
+.clinic-card p {
+  line-height: 1.7;
+  margin: 5px 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinic-card small == */
+.clinic-card small {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #7a969f;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stamp == */
+.stamp {
+  position: absolute;
+  right: 8%;
+  top: 25%;
+  border: 2px solid #2c9676;
+  background: #effaf4f5;
+  color: #218263;
+  border-radius: 10px;
+  padding: 17px;
+  font-size: 15px;
+  font-weight: 700;
+  transform: rotate(-5deg);
+  box-shadow: 0 3px 20px #1c344520;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .hands-center == */
+.hands-center {
+  position: absolute;
+  width: 220px;
+  max-width: 40%;
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .action-sprite == */
+.action-sprite {
+  position: absolute;
+  left: 18%;
+  top: 44%;
+  width: 140px;
+  max-width: 25%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 7px 20px #264c5612;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage svg.diagram == */
+.stage svg.diagram {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  font-family: "DM Sans", sans-serif;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .diagram text == */
+.diagram text {
+  font-size: 16px;
+  fill: #466571;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .diagram .small-text == */
+.diagram .small-text {
+  font-size: 12px;
+  fill: #6e8996;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .diagram .strong-text == */
+.diagram .strong-text {
+  font-weight: 700;
+  fill: #264c59;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .diagram .label-line == */
+.diagram .label-line {
+  stroke: #95aeb7;
+  stroke-width: 1;
+  fill: none;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .scene-tag == */
+.scene-tag {
+  position: absolute;
+  background: #f8fffbed;
+  border: 1px solid #bddace;
+  border-radius: 8px;
+  padding: 9px 13px;
+  font-size: 12px;
+  color: #3b705e;
+  box-shadow: 0 3px 8px #345a6108;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .scene-tag.right == */
+.scene-tag.right {
+  right: 6%;
+  top: 27%;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray-preview == */
+.tray-preview {
+  position: absolute;
+  inset: 23% 8% 21%;
+  background: #f6fbfbeb;
+  border: 1px solid #fff;
+  border-radius: 18px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 15px;
+  box-shadow: 0 20px 40px #2a485723;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray-slot == */
+.tray-slot {
+  border: 1px dashed #b8cbd0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  min-height: 75px;
+  font-size: 12px;
+  color: #708992;
+  text-align: center;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray-slot .asset == */
+.tray-slot .asset {
+  width: 54px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .tray-slot.filled == */
+.tray-slot.filled {
+  border-style: solid;
+  background: #edf7f2;
+  color: #297658;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sterile-zone == */
+.sterile-zone {
+  position: absolute;
+  inset: 25% 18% 25%;
+  border: 2px dashed #60a8a0;
+  border-radius: 12px;
+  background: #c0e8e740;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .sterile-zone .asset == */
+.sterile-zone .asset {
+  width: 28%;
+  box-shadow: 0 5px 14px #23485616;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .zone-title == */
+.zone-title {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #2b7869;
+  white-space: nowrap;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .swab-sprite == */
+.swab-sprite {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .key-callout == */
+.key-callout {
+  position: absolute;
+  left: 6%;
+  top: 23%;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #476e7b;
+  max-width: 150px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .key-callout strong == */
+.key-callout strong {
+  color: #183c49;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .result-panel == */
+.result-panel {
+  position: absolute;
+  inset: 18% 10% 20%;
+  background: #fffffff5;
+  border: 1px solid white;
+  border-radius: 14px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 15px 35px #183e4b22;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .result-panel h3 == */
+.result-panel h3 {
+  font-family: Manrope;
+  font-size: 25px;
+  margin: 0 0 10px;
+  color: #236c56;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .result-panel p == */
+.result-panel p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #64838e;
+  margin: 0 0 10px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .mini-log == */
+.mini-log {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .mini-log span == */
+.mini-log span {
+  font-size: 12px;
+  background: #edf6f0;
+  color: #347c60;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .text-field == */
+.text-field {
+  width: 100%;
+  border: 1px solid #cbdbe2;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  resize: vertical;
+  color: #315664;
+  font-family: inherit;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .record-label == */
+.record-label {
+  font-size: 14px;
+  color: #5d7b86;
+  display: block;
+  margin-bottom: 7px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .alert-band == */
+.alert-band {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  right: 8%;
+  background: #fff8eeed;
+  border: 1px solid #ddb478;
+  border-radius: 13px;
+  padding: 25px;
+  box-shadow: 0 12px 30px #1b35432b;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .alert-band h3 == */
+.alert-band h3 {
+  color: #9a6639;
+  margin: 0 0 9px;
+  font-size: 24px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .alert-band p == */
+.alert-band p {
+  color: #846b54;
+  font-size: 16px;
+  line-height: 1.7;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage:fullscreen == */
+.stage:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: auto;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .dialog-content == */
+.dialog-content {
+  padding: 26px;
+  max-width: 440px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .dialog-content h2 == */
+.dialog-content h2 {
+  font-family: Manrope;
+  font-size: 23px;
+  margin-top: 8px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .dialog-content p == */
+.dialog-content p {
+  font-size: 16px;
+  color: #5b7380;
+  line-height: 1.7;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .dialog-actions == */
+.dialog-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: dialog == */
+dialog {
+  border: 1px solid #cfdee3;
+  border-radius: 14px;
+  color: #234550;
+  padding: 0;
+  max-width: 90vw;
+  box-shadow: 0 20px 90px #102d3d40;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: dialog::backdrop == */
+dialog::backdrop {
+  background: #0d293b85;
+  backdrop-filter: blur(3px);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .flow-dash == */
+.flow-dash {
+  animation: flow 1.4s linear infinite;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @keyframes flow == */
+@keyframes flow {
+  /* == AQUÍ SE APLICAN ESTILOS A: to == */
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .paused .flow-dash == */
+.paused .flow-dash {
+  animation-play-state: paused;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @media (min-width: 1500px) == */
+@media (min-width: 1500px) {
+  /* == AQUÍ SE APLICAN ESTILOS A: .lab == */
+  .lab {
+    grid-template-columns: minmax(0, 1fr) 360px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stage == */
+  .stage {
+    min-height: 500px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .guide == */
+  .guide {
+    padding: 28px;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @media (max-width: 1050px) == */
+@media (max-width: 1050px) {
+  /* == AQUÍ SE APLICAN ESTILOS A: main == */
+  main {
+    padding: 25px 3%;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .lab == */
+  .lab {
+    grid-template-columns: minmax(0, 1fr) 290px;
+    gap: 15px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .guide == */
+  .guide {
+    padding: 19px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stage == */
+  .stage {
+    min-height: 420px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .tray == */
+  .tray {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .material == */
+  .material {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 5px;
+    padding: 4px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .material .asset == */
+  .material .asset {
+    width: 37px;
+    flex-shrink: 0;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .tray-heading > span == */
+  .tray-heading > span {
+    display: none;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .clinic-card == */
+  .clinic-card {
+    padding: 14px;
+    font-size: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .clinic-card h3 == */
+  .clinic-card h3 {
+    font-size: 15px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .hotspot == */
+  .hotspot {
+    font-size: 12px;
+    padding: 9px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stage-toolbar == */
+  .stage-toolbar {
+    padding: 12px;
+    font-size: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .toolbar-actions label == */
+  .toolbar-actions label {
+    display: none;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .caption == */
+  .caption {
+    font-size: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: #timeline == */
+  #timeline {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .key-callout == */
+  .key-callout {
+    font-size: 12px;
+    max-width: 115px;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @media (max-width: 760px) == */
+@media (max-width: 760px) {
+  /* == AQUÍ SE APLICAN ESTILOS A: header == */
+  header {
+    height: 67px;
+    padding: 0 19px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .brand-sub == */
+  .brand-sub {
+    display: none;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .header-label == */
+  .header-label {
+    font-size: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: main == */
+  main {
+    padding: 22px 15px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .title-row == */
+  .title-row {
+    display: block;
+    margin-bottom: 18px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: h1 == */
+  h1 {
+    font-size: 28px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .scenario-control == */
+  .scenario-control {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .scenario-control label == */
+  .scenario-control label {
+    font-size: 12px;
+    margin: 0;
+    max-width: 75px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .scenario-control select == */
+  .scenario-control select {
+    font-size: 12px;
+    padding: 9px 22px 9px 10px;
+    flex: 1;
+    min-width: 0;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .lab == */
+  .lab {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .stage-column,
+  /* == AQUÍ SE APLICAN ESTILOS A: .guide == */
+  .guide {
+    width: 100%;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stage == */
+  .stage {
+    min-height: 360px;
+    aspect-ratio: 1.3;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .guide == */
+  .guide {
+    min-height: 0;
+    padding: 22px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .guide h2 == */
+  .guide h2 {
+    font-size: 23px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .guide-top == */
+  .guide-top {
+    margin-bottom: 14px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .tray-section == */
+  .tray-section {
+    padding: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .transport == */
+  .transport {
+    gap: 4px;
+    padding: 8px 9px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .transport #stage-state == */
+  .transport #stage-state {
+    display: none;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .material .asset == */
+  .material .asset {
+    width: 33px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stage-toolbar == */
+  .stage-toolbar {
+    padding: 10px 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .clinic-card == */
+  .clinic-card {
+    top: 19%;
+    left: 5%;
+    max-width: 48%;
+    font-size: 12px;
+    padding: 13px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .clinic-card h3 == */
+  .clinic-card h3 {
+    font-size: 14px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .patient-hotspot == */
+  .patient-hotspot {
+    left: 44%;
+    top: 65%;
+    font-size: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .view-badge == */
+  .view-badge {
+    padding: 5px 7px;
+    left: 14px;
+    top: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .caption == */
+  .caption {
+    padding: 9px 12px;
+    bottom: 14px;
+    max-width: 94%;
+    font-size: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .diagram text == */
+  .diagram text {
+    font-size: 17px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .diagram .small-text == */
+  .diagram .small-text {
+    font-size: 14px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .key-callout == */
+  .key-callout {
+    top: 18%;
+    font-size: 12px;
+    max-width: 100px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .scene-tag == */
+  .scene-tag {
+    padding: 6px 8px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .scene-tag.right == */
+  .scene-tag.right {
+    right: 4%;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .tray-preview == */
+  .tray-preview {
+    inset: 20% 4% 22%;
+    gap: 5px;
+    padding: 9px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .tray-slot == */
+  .tray-slot {
+    min-height: 65px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .tray-slot .asset == */
+  .tray-slot .asset {
+    width: 40px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .swab-sprite == */
+  .swab-sprite {
+    width: 78px;
+    height: 78px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .result-panel == */
+  .result-panel {
+    inset: 16% 6% 20%;
+    padding: 18px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .result-panel h3 == */
+  .result-panel h3 {
+    font-size: 22px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .result-panel p == */
+  .result-panel p {
+    font-size: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .alert-band == */
+  .alert-band {
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    padding: 19px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .alert-band h3 == */
+  .alert-band h3 {
+    font-size: 21px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .alert-band p == */
+  .alert-band p {
+    font-size: 14px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: footer == */
+  footer {
+    display: block;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: footer details == */
+  footer details {
+    margin-top: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: #timeline == */
+  #timeline {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stamp == */
+  .stamp {
+    font-size: 12px;
+    padding: 10px;
+    top: 56%;
+    right: 9%;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @media (prefers-reduced-motion: reduce) == */
+@media (prefers-reduced-motion: reduce) {
+  /* == AQUÍ SE APLICAN ESTILOS A: * == */
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .flow-dash == */
+  .flow-dash {
+    animation: none;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .hygiene-sprite == */
+.hygiene-sprite {
+  background-image: url("assets/hygiene.png");
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .brand == */
+.brand {
+  color: #004a87;
+  font-size: 20px;
+  line-height: 1.25;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .brand .mark == */
+.brand .mark {
+  background: #004a87;
+  color: #ffd500;
+  font-size: 17px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .brand-sub == */
+.brand-sub {
+  display: block;
+  margin: 5px 0 0;
+  font-size: 9px;
+  letter-spacing: 1.6px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: header == */
+header {
+  border-top: 5px solid #d1ae00;
+}
+.primary,
+/* == AQUÍ SE APLICAN ESTILOS A: .action-button == */
+.action-button {
+  background: #004a87;
+}
+.primary:hover,
+/* == AQUÍ SE APLICAN ESTILOS A: .action-button:hover == */
+.action-button:hover {
+  background: #003a6b;
+}
+.eyebrow,
+.guide-top,
+/* == AQUÍ SE APLICAN ESTILOS A: .sequence h2 == */
+.sequence h2 {
+  color: #004a87;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .guided-badge == */
+.guided-badge {
+  background: #eef3fa;
+  color: #004a87;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .step-link.current == */
+.step-link.current {
+  background: #004a87;
+  color: white;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .material.active == */
+.material.active {
+  border-color: #004a87;
+  background: #edf4fb;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .material-action == */
+.material-action {
+  width: 100%;
+  margin-bottom: 16px;
+  min-height: 46px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage.focus == */
+.stage.focus {
+  background: #edf4fb;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .hands-center == */
+.hands-center {
+  width: 280px;
+  max-width: 48%;
+  top: 46%;
+  left: 51%;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage:has(.hygiene-sprite) .scene-tag == */
+.stage:has(.hygiene-sprite) .scene-tag {
+  top: 16%;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  white-space: normal;
+  width: max-content;
+  max-width: 85%;
+  text-align: center;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage:has(.hygiene-sprite) .action-sprite == */
+.stage:has(.hygiene-sprite) .action-sprite {
+  width: 85px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .caption == */
+.caption {
+  line-height: 1.5;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: #pause == */
+#pause {
+  min-width: 78px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .alert-band == */
+.alert-band {
+  max-height: 80%;
+  overflow: auto;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .toolbar-actions == */
+.toolbar-actions {
+  flex-wrap: wrap;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @media (max-width: 760px) == */
+@media (max-width: 760px) {
+  /* == AQUÍ SE APLICAN ESTILOS A: .brand == */
+  .brand {
+    font-size: 15px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .brand-sub == */
+  .brand-sub {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .header-label == */
+  .header-label {
+    display: none;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .hands-center == */
+  .hands-center {
+    max-width: 58%;
+    width: 230px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stage:has(.hygiene-sprite) .action-sprite == */
+  .stage:has(.hygiene-sprite) .action-sprite {
+    width: 60px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stage-toolbar == */
+  .stage-toolbar {
+    align-items: flex-start;
+    gap: 8px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .toolbar-actions == */
+  .toolbar-actions {
+    gap: 5px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .stage-toolbar > div:first-child == */
+  .stage-toolbar > div:first-child {
+    max-width: 100px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .alert-band == */
+  .alert-band {
+    top: 15%;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .lab:fullscreen == */
+.lab:fullscreen {
+  background: #edf2f5;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding: 22px;
+  align-items: start;
+}
+/* Continuous patient observation */
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-monitor == */
+.clinical-monitor {
+  background: #071e28;
+  color: #e8f2f8;
+  border: 1px solid #31505c;
+  border-radius: 14px;
+  margin: 0 0 22px;
+  padding: 18px 22px;
+  box-shadow: 0 9px 28px #09244012;
+}
+.monitor-heading,
+/* == AQUÍ SE APLICAN ESTILOS A: .monitor-bottom == */
+.monitor-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  font-size: 14px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .monitor-heading b == */
+.monitor-heading b {
+  font-size: 12px;
+  color: #eac879;
+  border: 1px solid #bba66870;
+  border-radius: 4px;
+  padding: 3px 7px;
+  margin-left: 12px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .monitor-grid == */
+.monitor-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 2.4fr) 0.7fr 0.7fr 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: center;
+  margin: 14px 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .trace-panel canvas == */
+.trace-panel canvas {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .trace-panel > span == */
+.trace-panel > span {
+  font-size: 12px;
+  color: #a0b6c0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .vital > span == */
+.vital > span {
+  display: block;
+  font-size: 14px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .vital small == */
+.vital small {
+  font-size: 12px;
+  opacity: 0.8;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .vital strong == */
+.vital strong {
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(24px, 3vw, 43px);
+  line-height: 1.5;
+  font-weight: 600;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .green == */
+.green {
+  color: #63e2a5;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .blue == */
+.blue {
+  color: #69cafa;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .gold == */
+.gold {
+  color: #eac879;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .monitor-bottom == */
+.monitor-bottom {
+  border-top: 1px solid #29434e;
+  padding-top: 12px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .monitor-bottom button == */
+.monitor-bottom button {
+  background: #243e4c;
+  color: white;
+  border: 1px solid #55707d;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-monitor.incident == */
+.clinical-monitor.incident {
+  border-color: #d98564;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .incident#patient-status == */
+.incident#patient-status {
+  color: #ffc39a;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .patient-response == */
+.patient-response {
+  display: flex;
+  background: #fff;
+  border: 1px solid #cedbe4;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .patient-view == */
+.patient-view {
+  width: 180px;
+  min-width: 150px;
+  position: relative;
+  overflow: hidden;
+  background: #dce9ed;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .patient-view img == */
+.patient-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: mannequin-breath var(--breath-period, 3s) ease-in-out infinite;
+  transform-origin: 45% 65%;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .patient-view > span == */
+.patient-view > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #08263bdd;
+  color: #fff;
+  padding: 6px;
+  font-size: 12px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .patient-view.expanded == */
+.patient-view.expanded {
+  width: 55%;
+  min-height: 240px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .patient-dialogue == */
+.patient-dialogue {
+  padding: 17px;
+  flex: 1;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .patient-dialogue p == */
+.patient-dialogue p {
+  font-size: 19px;
+  margin: 10px 0 16px;
+  color: #153a52;
+  line-height: 1.5;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .response-buttons == */
+.response-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.response-buttons button,
+/* == AQUÍ SE APLICAN ESTILOS A: .incident-buttons button == */
+.incident-buttons button {
+  border: 1px solid #b8cbd8;
+  background: #f4f8fb;
+  color: #183c55;
+  border-radius: 7px;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.response-buttons button:disabled,
+/* == AQUÍ SE APLICAN ESTILOS A: .incident-buttons button:disabled == */
+.incident-buttons button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .fluid-panel == */
+.fluid-panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f6f9fc;
+  border: 1px solid #d6e0e7;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 14px 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .fluid-reservoir == */
+.fluid-reservoir {
+  width: 118px;
+  min-width: 95px;
+  height: 108px;
+  border: 2px solid #91acba;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: white;
+  display: grid;
+  place-items: center;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .fluid-reservoir > span == */
+.fluid-reservoir > span {
+  z-index: 1;
+  font-size: 14px;
+  color: #223943;
+  line-height: 1.8;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .fluid-level == */
+.fluid-level {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ebcf75;
+  opacity: 0.75;
+  transition: height 0.3s linear;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .collector .fluid-level == */
+.collector .fluid-level {
+  background: #e8ba49;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .fluid-middle == */
+.fluid-middle {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .fluid-middle p == */
+.fluid-middle p {
+  margin: 9px 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .fluid-middle small == */
+.fluid-middle small {
+  font-size: 12px;
+  color: #586c7c;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: #fluid-connection == */
+#fluid-connection {
+  height: 8px;
+  border-radius: 6px;
+  background: #c8d7df;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: #fluid-connection.flowing == */
+#fluid-connection.flowing {
+  background: repeating-linear-gradient(
+    90deg,
+    #d5b64f 0 10px,
+    #f7e9b7 10px 20px
+  );
+  background-size: 40px 8px;
+  animation: fluid-motion 1.2s linear infinite;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-alert == */
+.clinical-alert {
+  border: 1px solid #d39669;
+  background: #fff5ea;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-alert p == */
+.clinical-alert p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-alert small == */
+.clinical-alert small {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+}
+.instructor-panel,
+.event-log,
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-summary == */
+.clinical-summary {
+  border: 1px solid #ccd9e2;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 16px 0;
+  background: white;
+}
+.instructor-panel summary,
+/* == AQUÍ SE APLICAN ESTILOS A: .event-log summary == */
+.event-log summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  color: #153952;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .incident-buttons == */
+.incident-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .event-log ol == */
+.event-log ol {
+  max-height: 240px;
+  overflow: auto;
+  padding-left: 22px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .event-log li == */
+.event-log li {
+  padding: 8px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .event-log time == */
+.event-log time {
+  font-variant-numeric: tabular-nums;
+  color: #486b86;
+  margin-right: 10px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .frozen * == */
+.frozen * {
+  animation-play-state: paused !important;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-summary h2 == */
+.clinical-summary h2 {
+  font-size: 21px;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-summary p == */
+.clinical-summary p {
+  line-height: 1.6;
+}
+.clinical-alert[hidden],
+/* == AQUÍ SE APLICAN ESTILOS A: .clinical-summary[hidden] == */
+.clinical-summary[hidden] {
+  display: none;
+}
+/* == AQUÍ SE APLICAN ESTILOS A: .stage .diagram == */
+.stage .diagram {
+  filter: drop-shadow(0 5px 8px #193b4b15);
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @keyframes mannequin-breath == */
+@keyframes mannequin-breath {
+  0%,
+  /* == AQUÍ SE APLICAN ESTILOS A: 100% == */
+  100% {
+    transform: scale(1);
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: 50% == */
+  50% {
+    transform: scale(1.012);
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @keyframes fluid-motion == */
+@keyframes fluid-motion {
+  /* == AQUÍ SE APLICAN ESTILOS A: to == */
+  to {
+    background-position: 40px 0;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @media (max-width: 900px) == */
+@media (max-width: 900px) {
+  /* == AQUÍ SE APLICAN ESTILOS A: .monitor-grid == */
+  .monitor-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .trace-panel == */
+  .trace-panel {
+    grid-column: 1/-1;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .trace-panel canvas == */
+  .trace-panel canvas {
+    height: 75px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .vital strong == */
+  .vital strong {
+    font-size: 26px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .monitor-heading == */
+  .monitor-heading {
+    flex-wrap: wrap;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .patient-view == */
+  .patient-view {
+    width: 125px;
+    min-width: 100px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .patient-dialogue p == */
+  .patient-dialogue p {
+    font-size: 17px;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @media (max-width: 520px) == */
+@media (max-width: 520px) {
+  /* == AQUÍ SE APLICAN ESTILOS A: .clinical-monitor == */
+  .clinical-monitor {
+    padding: 14px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .monitor-heading b == */
+  .monitor-heading b {
+    display: inline-block;
+    margin: 5px 0;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .monitor-grid == */
+  .monitor-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .vital strong == */
+  .vital strong {
+    font-size: 28px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .monitor-bottom == */
+  .monitor-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .patient-response == */
+  .patient-response {
+    flex-direction: column;
+  }
+  .patient-view,
+  /* == AQUÍ SE APLICAN ESTILOS A: .patient-view.expanded == */
+  .patient-view.expanded {
+    width: 100%;
+    height: 150px;
+    min-height: 0;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .fluid-panel == */
+  .fluid-panel {
+    gap: 8px;
+    padding: 10px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .fluid-reservoir == */
+  .fluid-reservoir {
+    min-width: 73px;
+    width: 73px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .fluid-middle == */
+  .fluid-middle {
+    font-size: 12px;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .response-buttons button == */
+  .response-buttons button {
+    flex: 1;
+  }
+  /* == AQUÍ SE APLICAN ESTILOS A: .incident-buttons button == */
+  .incident-buttons button {
+    width: 100%;
+  }
+}
+/* == AQUÍ SE APLICAN ESTILOS A: @media (prefers-reduced-motion: reduce) == */
+@media (prefers-reduced-motion: reduce) {
+  .patient-view img,
+  /* == AQUÍ SE APLICAN ESTILOS A: #fluid-connection == */
+  #fluid-connection {
+    animation: none !important;
+  }
+}
